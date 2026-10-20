@@ -26,7 +26,13 @@ namespace Platform
         virtual void Show() = 0;
         virtual void PollEvents() = 0;
 
+        bool ShouldClose() const
+        {
+            return m_ShouldClose;
+        }
+
     protected:
         WindowDescriptor m_Descriptor;
+        bool m_ShouldClose = false;
     };
 }

@@ -1,5 +1,7 @@
 #pragma once
+
 #include <Window.hpp>
+#include <Windows.h>
 
 namespace Platform
 {
@@ -16,8 +18,9 @@ namespace Platform
         void PollEvents() override;
 
     private:
+        HWND m_WindowHandle = nullptr;
+        HINSTANCE m_InstanceHandle = nullptr;
 
-
-
+        static LRESULT CALLBACK WindowProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam);
     };
 }

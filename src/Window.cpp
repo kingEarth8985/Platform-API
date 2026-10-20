@@ -1,9 +1,15 @@
 #include <Window.hpp>
 #include <WindowFactory.hpp>
 
+#ifdef PLATFORM_WINDOWS
+    #include <WIN32/Window.hpp>
+#elif PLATFORM_LINUX
+    #include <LINUX/Window.hpp>
+#endif
+
 namespace Platform
 {
-    std::unique_ptr<Window> CreateWindow(const WindowDescriptor& descriptor)
+    std::unique_ptr<Window> CreatePlatformWindow(const WindowDescriptor& descriptor)
     {
         #ifdef PLATFORM_WINDOWS
             return std::make_unique<Win32Window>(descriptor);
