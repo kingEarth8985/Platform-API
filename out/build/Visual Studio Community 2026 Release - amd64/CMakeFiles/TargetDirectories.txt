@@ -1,3 +1,0 @@
-C:/Projects/Platform/out/build/Visual Studio Community 2026 Release - amd64/CMakeFiles/Platform.dir
-C:/Projects/Platform/out/build/Visual Studio Community 2026 Release - amd64/CMakeFiles/ALL_BUILD.dir
-C:/Projects/Platform/out/build/Visual Studio Community 2026 Release - amd64/CMakeFiles/ZERO_CHECK.dir
