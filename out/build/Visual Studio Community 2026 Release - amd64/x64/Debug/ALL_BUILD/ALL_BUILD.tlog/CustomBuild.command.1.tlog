@@ -1,0 +1,10 @@
+^C:\PROJECTS\PLATFORM\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Projects/Platform "-BC:/Projects/Platform/out/build/Visual Studio Community 2026 Release - amd64" --check-stamp-file "C:/Projects/Platform/out/build/Visual Studio Community 2026 Release - amd64/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

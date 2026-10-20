@@ -1,0 +1,10 @@
+^C:\PROJECTS\PLATFORM\OUT\BUILD\VISUAL STUDIO COMMUNITY 2026 RELEASE - AMD64\CMAKEFILES\33A33E69A1D7F57CD26364AE3E667D25\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Projects/Platform "-BC:/Projects/Platform/out/build/Visual Studio Community 2026 Release - amd64" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Projects/Platform/out/build/Visual Studio Community 2026 Release - amd64/Platform.slnx"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

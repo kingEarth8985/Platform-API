@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\Platform\out\build\Visual Studio Community 2026 Release - amd64\CMakeFiles\33a33e69a1d7f57cd26364ae3e667d25\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{DED043CE-2786-32B0-9C6A-18A64AEEDD02}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
